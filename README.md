@@ -46,25 +46,6 @@ npm install
 npm run dev    # Runs on http://localhost:5174
 ```
 
-## 🔐 Default Admin Credentials
-- **Email**: admin@hotel.com
-- **Password**: admin123
-- ⚠️ **Change password after first login!**
-
-## 🛠️ Environment Variables
-
-Update `server/.env`:
-```env
-PORT=3000
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-min-32-chars
-NODE_ENV=development
-DB_HOST=127.0.0.1
-DB_USER=root
-DB_PASS=your_mysql_password
-DB_NAME=hotel_management
-DB_PORT=3306
-```
-
 ## 📱 Features
 
 ### Client Side
@@ -82,32 +63,6 @@ DB_PORT=3306
 - Content management
 - Reports and analytics
 
-## 🔧 Troubleshooting
-
-### Database Connection Issues
-1. Ensure MySQL is running
-2. Check credentials in `.env`
-3. Run `npm run setup` to initialize database
-
-### Port Conflicts
-- Server: 3000
-- Client: 5173
-- Admin: 5174
-
-### CORS Issues
-- Ensure all three services are running
-- Check CORS configuration in server.js
-
-## 🚦 Development Workflow
-
-1. Start MySQL
-2. Run `cd server && npm run dev`
-3. Run `cd client && npm run dev`
-4. Run `cd admin && npm run dev`
-5. Access:
-   - Client: http://localhost:5173
-   - Admin: http://localhost:5174
-   - API: http://localhost:3000
 
 ## 📝 API Endpoints
 
